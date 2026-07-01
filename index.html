@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arunkumar M | Technical Writer </title>
+  <meta name="description" content="Senior Technical Writer specializing in API documentation, DITA XML, MadCap Flare, Oxygen XML, and developer documentation. Available for freelance and full-time roles." />
+  <meta property="og:title" content="Arunkumar M| Technical Writer Portfolio" />
+  <meta property="og:description" content="API Documentation · DITA XML · MadCap Flare · Oxygen XML · Developer Docs" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="C:\Users\arunkumarm\Downloads\style.css" />
+  <link rel="stylesheet" href="C:\Users\arunkumarm\Downloads\responsive.css"/>
+  <link rel="stylesheet" href="C:\Users\arunkumarm\Downloads\darkmode.css" />
+
+  <!-- Dark mode (before render) -->
+  <script src="C:\Users\arunkumarm\Downloads\darkmode.js"></script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading-screen" role="status" aria-label="Loading portfolio">
+  <div class="loader-logo">Arunkumar<span>.</span> M</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- Header -->
+<header id="main-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo">
+      <div class="logo-icon" aria-hidden="true"><i class="fas fa-pen-nib"></i></div>
+      Arunkumar<span>M</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="api/authentication.html" class="nav-link">API Docs</a>
+      <a href="user-guides/getting-started.html" class="nav-link">User Guides</a>
+      <a href="dita/concept.html" class="nav-link">DITA</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn-search-trigger" aria-label="Search documentation" title="Search (Ctrl+K)">
+        <i class="fas fa-search"></i>
+      </button>
+      <button class="btn-dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <a href="contact.html" class="btn-hire">
+        <i class="fas fa-paper-plane"></i> Hire Me
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="about.html"><i class="fas fa-user"></i> About</a>
+  <a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a>
+  <a href="skills.html"><i class="fas fa-tools"></i> Skills</a>
+  <a href="api/authentication.html"><i class="fas fa-code"></i> API Docs</a>
+  <a href="user-guides/getting-started.html"><i class="fas fa-book"></i> User Guides</a>
+  <a href="dita/concept.html"><i class="fas fa-file-code"></i> DITA XML</a>
+  <a href="blog.html"><i class="fas fa-rss"></i> Blog</a>
+  <a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+  <a href="contact.html" class="mobile-hire"><i class="fas fa-paper-plane"></i> Hire Me</a>
+</nav>
+
+<!-- Search Overlay -->
+<div id="search-overlay" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <i class="fas fa-search"></i>
+      <input type="search" id="search-input" placeholder="Search documentation, guides, APIs…" autocomplete="off" aria-label="Search documentation" />
+      <button class="search-close" id="search-close" aria-label="Close search"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="search-results" role="listbox"></div>
+    <div style="padding:10px 16px;font-size:.72rem;color:var(--gray-300);border-top:1px solid var(--gray-100);display:flex;gap:16px">
+      <span><kbd style="background:var(--gray-100);padding:2px 5px;border-radius:3px;font-size:.7rem">↵</kbd> to open</span>
+      <span><kbd style="background:var(--gray-100);padding:2px 5px;border-radius:3px;font-size:.7rem">Esc</kbd> to close</span>
+      <span><kbd style="background:var(--gray-100);padding:2px 5px;border-radius:3px;font-size:.7rem">Ctrl K</kbd> to search</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-bg-pattern" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <!-- Left Column -->
+    <div class="hero-content">
+      <div class="hero-kicker">
+        <span class="kicker-dot"></span>
+        Available for New Projects
+      </div>
+
+      <h1 class="hero-title">
+        Senior Technical<br/>
+        <span class="accent">Writer</span><br/>
+        <span class="line2">&amp; API Documentation Specialist</span>
+      </h1>
+
+      <p class="hero-desc">
+        I transform complex technical concepts into clear, user-centered documentation. Specializing in API references, DITA XML, MadCap Flare, and developer portals that developers actually love to use.
+      </p>
+
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn btn-gold btn-lg">
+          <i class="fas fa-briefcase"></i> View Portfolio
+        </a>
+        <a href="resume.html" class="btn btn-outline-navy btn-lg">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="contact.html" class="btn btn-outline-navy btn-lg">
+          <i class="fas fa-paper-plane"></i> Hire Me
+        </a>
+      </div>
+
+      <div class="hero-chips">
+        <span class="hero-chip"><i class="fas fa-check"></i> API Documentation</span>
+        <span class="hero-chip"><i class="fas fa-check"></i> DITA XML</span>
+        <span class="hero-chip"><i class="fas fa-check"></i> MadCap Flare</span>
+        <span class="hero-chip"><i class="fas fa-check"></i> Oxygen XML</span>
+        <span class="hero-chip"><i class="fas fa-check"></i> OpenAPI / Swagger</span>
+        <span class="hero-chip"><i class="fas fa-check"></i> Developer Portals</span>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span class="hero-card-label">API Reference</span>
+          <span class="hero-card-status"><span class="status-dot"></span> Live</span>
+        </div>
+        <div class="hero-card-code">
+<span class="code-keyword">GET</span> /v2/users/<span class="code-string">{id}</span><br/>
+<br/>
+<span class="code-comment">// Response 200 OK</span><br/>
+{<br/>
+&nbsp;&nbsp;<span class="code-string">"id"</span>: <span class="code-string">"usr_4k2m9"</span>,<br/>
+&nbsp;&nbsp;<span class="code-string">"name"</span>: <span class="code-string">"Alex Morgan"</span>,<br/>
+&nbsp;&nbsp;<span class="code-string">"role"</span>: <span class="code-string">"admin"</span>,<br/>
+&nbsp;&nbsp;<span class="code-string">"plan"</span>: <span class="code-string">"enterprise"</span><br/>
+}
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span class="hero-card-label">DITA Topic</span>
+          <span class="hero-card-status"><span class="status-dot"></span> Validated</span>
+        </div>
+        <div class="hero-card-code">
+<span class="code-keyword">&lt;task</span> <span class="code-string">id</span>=<span class="code-number">"install-app"</span><span class="code-keyword">&gt;</span><br/>
+&nbsp;&nbsp;<span class="code-keyword">&lt;title&gt;</span>Install the Application<span class="code-keyword">&lt;/title&gt;</span><br/>
+&nbsp;&nbsp;<span class="code-keyword">&lt;taskbody&gt;</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;steps&gt;</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;step&gt;</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;cmd&gt;</span>Run installer<span class="code-keyword">&lt;/cmd&gt;</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;/step&gt;</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span class="hero-card-label">Documentation Stats</span>
+          <span class="hero-card-status"><span class="status-dot"></span> Updated Today</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px">
+          <div style="text-align:center;padding:8px;background:rgba(255,255,255,.05);border-radius:8px">
+            <div style="font-size:1.4rem;font-weight:800;color:var(--gold)">150+</div>
+            <div style="font-size:.7rem;color:rgba(255,255,255,.45);margin-top:2px">Doc Pages</div>
+          </div>
+          <div style="text-align:center;padding:8px;background:rgba(255,255,255,.05);border-radius:8px">
+            <div style="font-size:1.4rem;font-weight:800;color:var(--gold)">40+</div>
+            <div style="font-size:.7rem;color:rgba(255,255,255,.45);margin-top:2px">API Refs</div>
+          </div>
+          <div style="text-align:center;padding:8px;background:rgba(255,255,255,.05);border-radius:8px">
+            <div style="font-size:1.4rem;font-weight:800;color:var(--gold)">8yr</div>
+            <div style="font-size:.7rem;color:rgba(255,255,255,.45);margin-top:2px">Experience</div>
+          </div>
+          <div style="text-align:center;padding:8px;background:rgba(255,255,255,.05);border-radius:8px">
+            <div style="font-size:1.4rem;font-weight:800;color:var(--gold)">98%</div>
+            <div style="font-size:.7rem;color:rgba(255,255,255,.45);margin-top:2px">Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="section-sm bg-off">
+  <div class="section-inner">
+    <div class="stats-grid">
+      <div class="stat-card" data-anim="up">
+        <div class="stat-number"><span data-count="85" data-suffix="+">0+</span></div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-card" data-anim="up" data-delay="100">
+        <div class="stat-number"><span data-count="8" data-suffix="">0</span><span style="color:var(--gold)">yr</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-card" data-anim="up" data-delay="200">
+        <div class="stat-number"><span data-count="4200" data-suffix="+">0+</span></div>
+        <div class="stat-label">Documentation Pages</div>
+      </div>
+      <div class="stat-card" data-anim="up" data-delay="300">
+        <div class="stat-number"><span data-count="40" data-suffix="+">0+</span></div>
+        <div class="stat-label">API References</div>
+      </div>
+      <div class="stat-card" data-anim="up" data-delay="400">
+        <div class="stat-number"><span data-count="98" data-suffix="%">0%</span></div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERTISE ===================== -->
+<section>
+  <div class="section-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto 56px" data-anim="up">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title">End-to-end documentation <span>expertise</span></h2>
+      <p class="section-desc" style="margin:0 auto">From single-page API references to enterprise DITA publishing pipelines — I handle the full documentation lifecycle.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card" data-anim="up" data-delay="0">
+        <div class="feature-icon"><i class="fas fa-code"></i></div>
+        <div class="feature-title">API Documentation</div>
+        <p class="feature-desc">OpenAPI 3.0, REST, GraphQL, Webhooks. I write developer-first references that reduce support tickets and increase API adoption.</p>
+        <a href="api/authentication.html" style="font-size:.85rem;font-weight:600;color:var(--royal);display:inline-flex;align-items:center;gap:5px;margin-top:16px">View API Docs <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="feature-card" data-anim="up" data-delay="80">
+        <div class="feature-icon"><i class="fas fa-file-code"></i></div>
+        <div class="feature-title">DITA XML Authoring</div>
+        <p class="feature-desc">Concept, task, and reference topics. DITA maps, conref, keyref, profiling, and multi-channel publishing with Oxygen XML.</p>
+        <a href="dita/concept.html" style="font-size:.85rem;font-weight:600;color:var(--royal);display:inline-flex;align-items:center;gap:5px;margin-top:16px">View DITA Docs <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="feature-card" data-anim="up" data-delay="160">
+        <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+        <div class="feature-title">User &amp; Admin Guides</div>
+        <p class="feature-desc">Installation guides, quick-start tutorials, administrator manuals, and knowledge bases. Written for humans, not robots.</p>
+        <a href="user-guides/getting-started.html" style="font-size:.85rem;font-weight:600;color:var(--royal);display:inline-flex;align-items:center;gap:5px;margin-top:16px">View Guides <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="feature-card" data-anim="up" data-delay="240">
+        <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+        <div class="feature-title">MadCap Flare</div>
+        <p class="feature-desc">Variables, snippets, conditions, responsive HTML5 output, and PDF publishing. Single-source publishing done right.</p>
+        <a href="madcap/flare-overview.html" style="font-size:.85rem;font-weight:600;color:var(--royal);display:inline-flex;align-items:center;gap:5px;margin-top:16px">View MadCap Work <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="feature-card" data-anim="up" data-delay="320">
+        <div class="feature-icon"><i class="fas fa-sitemap"></i></div>
+        <div class="feature-title">Information Architecture</div>
+        <p class="feature-desc">Content strategy, taxonomy design, navigation flows, and documentation audits. Structure that scales with your product.</p>
+        <a href="about.html" style="font-size:.85rem;font-weight:600;color:var(--royal);display:inline-flex;align-items:center;gap:5px;margin-top:16px">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="feature-card" data-anim="up" data-delay="400">
+        <div class="feature-icon"><i class="fas fa-tools"></i></div>
+        <div class="feature-title">Developer Portals</div>
+        <p class="feature-desc">Full developer experience: onboarding docs, SDKs, tutorials, changelogs, and interactive API explorers with Swagger UI.</p>
+        <a href="api/swagger-demo.html" style="font-size:.85rem;font-weight:600;color:var(--royal);display:inline-flex;align-items:center;gap:5px;margin-top:16px">View Demo <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURED PROJECTS ===================== -->
+<section class="bg-off">
+  <div class="section-inner">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:48px">
+      <div data-anim="left">
+        <div class="section-label">Featured Work</div>
+        <h2 class="section-title" style="margin-bottom:0">Recent <span>Projects</span></h2>
+      </div>
+      <a href="portfolio.html" class="btn btn-outline" data-anim="right">View All Projects <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card" data-anim="up" data-delay="0">
+        <div class="portfolio-card-img" style="background:linear-gradient(135deg,#0a1628,#1565c0)">
+          <i class="fas fa-code" style="position:relative;z-index:1"></i>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-category">API Documentation</div>
+          <h3 class="portfolio-card-title">PaymentGateway REST API Reference</h3>
+          <p class="portfolio-card-desc">Complete API reference covering authentication, 45 endpoints, webhooks, SDK examples in 6 languages, and an interactive Swagger explorer.</p>
+          <div class="tags" style="margin-bottom:16px">
+            <span class="tag">OpenAPI 3.0</span>
+            <span class="tag">Swagger UI</span>
+            <span class="tag">REST</span>
+          </div>
+          <div class="portfolio-card-footer">
+            <div class="portfolio-card-actions">
+              <a href="api/authentication.html" class="btn btn-primary btn-sm">View Docs</a>
+              <a href="api/swagger-demo.html" class="btn btn-outline btn-sm">API Explorer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-anim="up" data-delay="100">
+        <div class="portfolio-card-img" style="background:linear-gradient(135deg,#1a2a0a,#2e7d32)">
+          <i class="fas fa-file-code" style="position:relative;z-index:1"></i>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-category">DITA XML</div>
+          <h3 class="portfolio-card-title">Enterprise Software DITA Library</h3>
+          <p class="portfolio-card-desc">600+ reusable DITA topics organized into 12 DITA maps, with conditional profiling for three product editions and five output formats.</p>
+          <div class="tags" style="margin-bottom:16px">
+            <span class="tag">DITA 1.3</span>
+            <span class="tag">Oxygen XML</span>
+            <span class="tag">Conref</span>
+          </div>
+          <div class="portfolio-card-footer">
+            <div class="portfolio-card-actions">
+              <a href="dita/concept.html" class="btn btn-primary btn-sm">View Docs</a>
+              <a href="samples/sample-dita.xml" class="btn btn-outline btn-sm">Sample XML</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-anim="up" data-delay="200">
+        <div class="portfolio-card-img" style="background:linear-gradient(135deg,#1a0a2a,#7b1fa2)">
+          <i class="fas fa-layer-group" style="position:relative;z-index:1"></i>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-category">MadCap Flare</div>
+          <h3 class="portfolio-card-title">CloudPlatform Help Center</h3>
+          <p class="portfolio-card-desc">350-topic help center in MadCap Flare with responsive HTML5 output, PDF publishing, 80+ variables, and 40 condition tags for three product tiers.</p>
+          <div class="tags" style="margin-bottom:16px">
+            <span class="tag">MadCap Flare</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">PDF</span>
+          </div>
+          <div class="portfolio-card-footer">
+            <div class="portfolio-card-actions">
+              <a href="madcap/flare-overview.html" class="btn btn-primary btn-sm">View Docs</a>
+              <a href="portfolio.html" class="btn btn-outline btn-sm">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CAREER TIMELINE ===================== -->
+<section>
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start" class="timeline-layout">
+      <div data-anim="left">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Career <span>Timeline</span></h2>
+        <p class="section-desc" style="margin-bottom:36px">Eight years building documentation ecosystems at software companies ranging from early-stage startups to Fortune 500 enterprises.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2022 – Present</div>
+            <div class="timeline-title">Principal Technical Writer</div>
+            <div class="timeline-company">CloudTech Solutions, Inc.</div>
+            <p class="timeline-desc">Led documentation for a $2B SaaS platform. Built DITA library from scratch, designed developer portal, reduced API support tickets 42%.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019 – 2022</div>
+            <div class="timeline-title">Senior Technical Writer</div>
+            <div class="timeline-company">DevAPI Labs</div>
+            <p class="timeline-desc">Authored 300+ API reference pages using OpenAPI 3.0. Implemented MadCap Flare single-source publishing workflow.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017 – 2019</div>
+            <div class="timeline-title">Technical Writer II</div>
+            <div class="timeline-company">EnterpriseSync Corp.</div>
+            <p class="timeline-desc">Created DITA content for enterprise ERP software. Managed Oxygen XML transformation scenarios and PDF stylesheet customization.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2016 – 2017</div>
+            <div class="timeline-title">Junior Technical Writer</div>
+            <div class="timeline-company">SoftDocs Agency</div>
+            <p class="timeline-desc">Wrote user guides, release notes, and knowledge base articles. First exposure to DITA and structured authoring principles.</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-anim="right" style="padding-top:32px">
+        <div class="section-label">Education &amp; Certifications</div>
+        <h3 style="font-size:1.3rem;margin-bottom:24px;color:var(--navy)">Academic &amp; Professional <span style="color:var(--royal)">Credentials</span></h3>
+
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div class="card" style="border-left:3px solid var(--gold)">
+            <div class="card-body" style="padding:20px">
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <i class="fas fa-graduation-cap" style="color:var(--gold);font-size:1.2rem;margin-top:2px"></i>
+                <div>
+                  <div style="font-weight:700;color:var(--navy)">B.A. English – Technical Communication</div>
+                  <div style="font-size:.85rem;color:var(--gray-400)">State University · 2016</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border-left:3px solid var(--royal)">
+            <div class="card-body" style="padding:20px">
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <i class="fas fa-certificate" style="color:var(--royal);font-size:1.2rem;margin-top:2px"></i>
+                <div>
+                  <div style="font-weight:700;color:var(--navy)">Certified DITA Expert (CDE)</div>
+                  <div style="font-size:.85rem;color:var(--gray-400)">OASIS DITA Adoption Committee · 2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border-left:3px solid var(--royal)">
+            <div class="card-body" style="padding:20px">
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <i class="fas fa-certificate" style="color:var(--royal);font-size:1.2rem;margin-top:2px"></i>
+                <div>
+                  <div style="font-weight:700;color:var(--navy)">MadCap Flare Certified Developer</div>
+                  <div style="font-size:.85rem;color:var(--gray-400)">MadCap Software · 2021</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border-left:3px solid var(--success)">
+            <div class="card-body" style="padding:20px">
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <i class="fas fa-award" style="color:var(--success);font-size:1.2rem;margin-top:2px"></i>
+                <div>
+                  <div style="font-weight:700;color:var(--navy)">STC Fellow</div>
+                  <div style="font-size:.85rem;color:var(--gray-400)">Society for Technical Communication · 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border-left:3px solid var(--info)">
+            <div class="card-body" style="padding:20px">
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <i class="fas fa-award" style="color:var(--info);font-size:1.2rem;margin-top:2px"></i>
+                <div>
+                  <div style="font-weight:700;color:var(--navy)">AWS Certified Solutions Architect</div>
+                  <div style="font-size:.85rem;color:var(--gray-400)">Amazon Web Services · 2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS OVERVIEW ===================== -->
+<section class="bg-off">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:56px" data-anim="up">
+      <div class="section-label">Tools & Technologies</div>
+      <h2 class="section-title">Documentation <span>Toolkit</span></h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+      <div data-anim="left">
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:24px">Authoring & Publishing Tools</h3>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>MadCap Flare</span><span>95%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>Oxygen XML Editor</span><span>92%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>Adobe FrameMaker</span><span>88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>Adobe RoboHelp</span><span>85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>Confluence / Jira</span><span>90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90%"></div></div>
+        </div>
+      </div>
+      <div data-anim="right">
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:24px">Standards & Languages</h3>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>DITA XML 1.3</span><span>96%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="96%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>OpenAPI / Swagger</span><span>93%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="93%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>Markdown / Git / Docs-as-Code</span><span>90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>HTML / CSS / JavaScript</span><span>80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-label"><span>DocBook / S1000D</span><span>75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="skills.html" class="btn btn-primary">View Full Skills Profile <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section>
+  <div class="section-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto 48px" data-anim="up">
+      <div class="section-label">Testimonials</div>
+      <h2 class="section-title">What Clients <span>Say</span></h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      <div class="testimonial-card" data-anim="up" data-delay="0">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Alex completely transformed our API documentation. Developer onboarding time dropped from 3 weeks to 4 days. The Swagger explorer alone saved our support team hours every week.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SC</div>
+          <div>
+            <div class="author-name">Sarah Chen</div>
+            <div class="author-role">VP Engineering, PaymentGateway Inc.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-anim="up" data-delay="100">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">The DITA migration was flawless. Alex designed a content model that handles three product editions from a single source. Publishing time went from 2 days to 45 minutes.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MR</div>
+          <div>
+            <div class="author-name">Marcus Rodriguez</div>
+            <div class="author-role">Head of Documentation, EnterpriseSync</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-anim="up" data-delay="200">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Alex built our entire MadCap Flare project from scratch — 350 topics, custom PDF stylesheet, responsive HTML5 output. Best investment we made in our docs team.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PJ</div>
+          <div>
+            <div class="author-name">Priya Joshi</div>
+            <div class="author-role">Director of Product, CloudPlatform</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LATEST BLOG ===================== -->
+<section class="bg-off">
+  <div class="section-inner">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:48px">
+      <div data-anim="left">
+        <div class="section-label">Knowledge Sharing</div>
+        <h2 class="section-title" style="margin-bottom:0">Latest <span>Articles</span></h2>
+      </div>
+      <a href="blog.html" class="btn btn-outline" data-anim="right">View All Articles <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="blog-grid">
+      <div class="blog-card" data-anim="up" data-delay="0">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#0a1628,#1565c0)">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> Jun 2026</span>
+            <span><i class="fas fa-clock"></i> 8 min read</span>
+          </div>
+          <div class="blog-title">OpenAPI 3.1 vs 3.0: What Changed and Why It Matters</div>
+          <p class="blog-excerpt">A practical guide to the most important changes in OpenAPI 3.1, including webhook support, JSON Schema alignment, and richer type definitions.</p>
+          <a href="blog.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-anim="up" data-delay="100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#1a0a0a,#b71c1c)">
+          <i class="fas fa-file-code"></i>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> May 2026</span>
+            <span><i class="fas fa-clock"></i> 12 min read</span>
+          </div>
+          <div class="blog-title">DITA Content Reuse Patterns That Scale</div>
+          <p class="blog-excerpt">Conref, keyref, or map-level reuse? This guide breaks down each pattern with real examples and shows you when to use which approach.</p>
+          <a href="blog.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-anim="up" data-delay="200">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#0a1a0a,#1b5e20)">
+          <i class="fas fa-layer-group"></i>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> Apr 2026</span>
+            <span><i class="fas fa-clock"></i> 10 min read</span>
+          </div>
+          <div class="blog-title">MadCap Flare Variables: The Complete Guide</div>
+          <p class="blog-excerpt">Master variables in MadCap Flare — from simple product name variables to variable sets, version stamps, and dynamic conditions across 10+ targets.</p>
+          <a href="blog.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section style="background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:80px 0">
+  <div class="section-inner" style="text-align:center">
+    <div data-anim="up">
+      <div class="section-label" style="justify-content:center;color:var(--gold)">Ready to collaborate?</div>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:16px">
+        Let's build documentation your users <span style="color:var(--gold)">love</span>
+      </h2>
+      <p style="color:rgba(255,255,255,.6);font-size:1.05rem;max-width:520px;margin:0 auto 36px;line-height:1.7">
+        Whether you need API references, DITA authoring, MadCap Flare help, or a complete documentation overhaul — I'm available.
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="contact.html" class="btn btn-gold btn-lg">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+        <a href="portfolio.html" class="btn btn-outline-navy btn-lg">
+          <i class="fas fa-eye"></i> View Portfolio
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">Arunkumar<span>M</span></div>
+      <p class="footer-desc">Senior Technical Writer and API Documentation Specialist with 8+ years creating clear, structured, user-centered documentation.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:alex@example.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-heading">Documentation</div>
+      <div class="footer-links">
+        <a href="api/authentication.html" class="footer-link">API Reference</a>
+        <a href="user-guides/getting-started.html" class="footer-link">Getting Started</a>
+        <a href="dita/concept.html" class="footer-link">DITA XML</a>
+        <a href="madcap/flare-overview.html" class="footer-link">MadCap Flare</a>
+        <a href="oxygen/oxygen-overview.html" class="footer-link">Oxygen XML</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-heading">Portfolio</div>
+      <div class="footer-links">
+        <a href="portfolio.html" class="footer-link">All Projects</a>
+        <a href="skills.html" class="footer-link">Skills</a>
+        <a href="resume.html" class="footer-link">Resume</a>
+        <a href="blog.html" class="footer-link">Blog</a>
+        <a href="samples/OpenAPI.yaml" class="footer-link">Sample Files</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-heading">Contact</div>
+      <div class="footer-links">
+        <a href="contact.html" class="footer-link">Hire Me</a>
+        <a href="mailto:alex@example.com" class="footer-link">alex@example.com</a>
+        <a href="#" class="footer-link">LinkedIn Profile</a>
+        <a href="#" class="footer-link">GitHub Profile</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Arunkumar M. All rights reserved.</div>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="samples/README.md">README</a>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Back to top" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="C:\Users\arunkumarm\Downloads\main (1).js"></script>
+<script src="C:\Users\arunkumarm\Downloads\search.js"></script>
+</body>
+</html>
